@@ -10,7 +10,7 @@ import { FrontpageComponent } from './frontpage/frontpage.component';
 import { LoginComponent } from './login/login.component';
 import { HttpClientModule, HTTP_INTERCEPTORS  } from "@angular/common/http";
 import { FormsModule, ReactiveFormsModule } from '@angular/forms';
-import { fakeBackendProvider } from "./_helpers/fake-backend";
+// import { fakeBackendProvider } from "./_helpers/fake-backend";
 import { JwtInterceptor } from './../app/_helpers/jwt.interceptor';
 import { ErrorInterceptor } from "./_helpers/error.interceptor";
 
@@ -34,7 +34,7 @@ import { ErrorInterceptor } from "./_helpers/error.interceptor";
     { provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true },
     { provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true },
 
-    fakeBackendProvider
+    // fakeBackendProvider
   ],
   bootstrap: [AppComponent]
 })
