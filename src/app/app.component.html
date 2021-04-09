@@ -1,11 +1,79 @@
-<!-- <app-sidebar></app-sidebar> -->
-<!-- <nav class="navbar navbar-expand navbar-dark bg-dark" *ngIf="currentUser">
-    <div class="navbar-nav">
-        <a class="nav-item nav-link" routerLink="/">Home</a>
-        <a class="nav-item nav-link" (click)="logout()">Logout</a>
-    </div>
-</nav> -->
+<div class="conatiner-fluid">
+    <!-- Navbar -->
 
-<!-- main app container -->
+    <div class="container-fluid">
+
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <a class="navbar-brand" href="#">Wlcome</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+              <span class="navbar-toggler-icon"></span>
+            </button>
+          
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav  float-right">
+                <li class="nav-item active">
+                  <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                </li>
+               
+                <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                    Faculty
+                  </a>
+                  <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                    <a class="dropdown-item" href="/user/info">Basic Information</a>
+                  
+                  </div>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                      PArt A Details
+                    </a>
+                    <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                     
+											<a class="dropdown-item" href="/user/info">Basic Information</a>
+
+														<!-- Default dropright button -->
+														<a type="button" class="nav-link dropdown-item dropdown-toggle" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Part A.A
+														</a>
+														<div class="dropdown-menu">
+															<a class="dropdown-item" href="/user/info/part/a/1">PART A.1.1</a>
+															<a class="dropdown-item" href="/user/info/part/a/2">PART A.1.2</a>
+															<a class="dropdown-item" href="/user/info/part/a/3">PART A.1.3</a>
+															<a class="dropdown-item" href="/user/info/part/a/4">PART A.1.4</a>
+															<a class="dropdown-item" href="/user/info/part/a/5">PART A.1.5</a>
+															<a class="dropdown-item" href="/user/info/part/a/6">PART A.1.6</a>
+															<a class="dropdown-item" href="/user/info/part/a/7">PART A.1.7</a>													
+															</div>
+																<!-- Default dropright button -->
+														<a type="button" class="nav-link dropdown-item dropdown-toggle" href="#" id="navbarDropdown1" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+															Part A.B
+														</a>
+														<div class="dropdown-menu"aria-labelledby="navbarDropdown1">
+															<a class="dropdown-item" href="/user/info/part/b/1">PART A.B.1</a>
+															<a class="dropdown-item" href="/user/info/part/b/2">PART A.B.2</a>
+															<a class="dropdown-item" href="/user/info/part/b/3">PART A.B.3</a>
+															<a class="dropdown-item" href="/user/info/part/b/4">PART A.1.4</a>
+															<a class="dropdown-item" href="/user/info/part/b/5">PART A.1.5</a>
+															<a class="dropdown-item" href="/user/info/part/b/6">PART A.1.6</a>
+															<a class="dropdown-item" href="/user/info/part/b/7">PART A.1.7</a>													
+															</div>
+													
+                    
+                    </div>
+                  </li>
+
+                  
+              </ul>
+            
+            </div>
+          </nav>
+    
+    </div>
+
+    <!-- End Navbar -->
 
     <router-outlet></router-outlet>
+
+</div>
+

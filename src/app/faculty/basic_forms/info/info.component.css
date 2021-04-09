@@ -3,7 +3,14 @@ input{
     height: 30px;
 }
 
+.btn{
 
+    height: 30px;
+    font-size: small;
+    margin: 8px;
+
+
+}
 
 .ng-invalid{
     color: brown;
